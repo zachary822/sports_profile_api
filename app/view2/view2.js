@@ -53,8 +53,8 @@ angular.module('myApp.view2', ['ngRoute'])
       submit(form);
       for (let f of form) {
         if (!f.checkValidity()) {
-          // e.stopPropagation();
-          // form.querySelector('button').click();  // force form validation popup
+          e.stopPropagation();
+          form.querySelector('button').click();  // force form validation popup
           break;
         }
       }
